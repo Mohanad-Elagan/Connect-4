@@ -1,0 +1,86 @@
+﻿@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+body {
+    margin: 0;
+    background-image: url("images/background_2.jpg");
+}
+canvas{
+    border:5px solid black;
+    background:transparent;
+    position: absolute;
+    opacity: 0;
+}
+img{
+    display:none;
+}
+input{
+    position:absolute;
+    width:300px;
+    height:75px;
+    border-radius: 0.25em;
+    font-size: 4em;
+    text-align: center;
+    opacity:0;
+}
+#inputOne{
+    color:red;
+}
+#inputTwo{
+    color:green;
+}
+#winImg, #winner, #anotherGamePrompt{
+    width: 0;
+    height: 0;
+    position:absolute;
+}
+#winImg{
+    background-image:url("images/victory.png");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center; 
+}
+#winner, #anotherGamePrompt{
+    line-height: 66.6666px;
+    text-align:center;
+    font-family:calibri;
+    font-size: 3em;
+    border-radius: 0.5em;
+    background: rgba(150, 150, 150, 0.9);
+}
+#anotherGamePrompt{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#anotherGamePrompt div{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;    
+}
+#anotherGamePrompt div span{
+    background: white;
+    border-radius:0.25em;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#anotherGamePrompt div span:hover{
+    background: black;
+    color:white;
+    transition-duration: 0.5s;
+}
+#goodBye {
+    position: absolute;
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-family: Calibri;
+    font-size: 5em;
+}
